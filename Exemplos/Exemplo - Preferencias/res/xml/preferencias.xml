@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:dialogMessage="Mensagem da Janela"
+        android:dialogTitle="Título da Janela"
+        android:key="Pref1"
+        android:negativeButtonText="Botão Negativo"
+        android:positiveButtonText="Botão Positivo"
+        android:title="Título" >
+    </EditTextPreference>
+
+    <CheckBoxPreference
+        android:key="Pref2"
+        android:title="Título" />
+
+    <SwitchPreference
+        android:key="Pref3"
+        android:title="Título" />
+
+</PreferenceScreen>

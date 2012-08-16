@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/para"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Informe o E-mail do Destino"
+        android:inputType="textWebEmailAddress" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/assunto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Informe o Assunto" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/texto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Informe o Texto do E-mail" >
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonEnviar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar" >
+    </Button>
+
+</LinearLayout>

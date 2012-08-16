@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Exemplo - Listeners</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="informe_seu_nome">Informe seu nome:</string>
+    <string name="digite_seu_nome">Digite seu nome.</string>
+    <string name="clica_aqui">Clica aqui!</string>
+
+</resources>
