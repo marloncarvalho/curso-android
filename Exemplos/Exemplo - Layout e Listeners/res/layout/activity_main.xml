@@ -10,16 +10,18 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="20dp"
-        android:text="@string/informe_seu_nome" />
+        android:text="@string/informe_seu_nome"
+        android:textColor="@color/red" />
 
     <EditText
         android:id="@+id/editText1"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/largura_padrao"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="22dp"
-        android:hint="@string/digite_seu_nome" >
+        android:hint="@string/digite_seu_nome"
+        android:textColor="@color/red" >
 
         <requestFocus />
     </EditText>
