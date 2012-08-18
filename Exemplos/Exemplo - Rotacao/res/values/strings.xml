@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Exemplo - Rotação</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_toast">ToastActivity</string>
+    <string name="title_activity_nao_rotaciona">NaoRotacionaActivity</string>
+    <string name="title_activity_rotacao_por_listener">RotacaoPorListenerActivity</string>
+
+</resources>
