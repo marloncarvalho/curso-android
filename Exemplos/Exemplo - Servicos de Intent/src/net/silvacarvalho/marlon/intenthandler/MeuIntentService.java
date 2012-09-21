@@ -12,7 +12,7 @@ public class MeuIntentService extends IntentService {
 
 	@Override
 	protected void onHandleIntent(Intent intent) {
-		Log.d("TEEEEEEEEEEESTE", "OPA!");
+		Log.d("Teste", "Mensagem do IntentService!");
 	}
 
 }
