@@ -11,6 +11,9 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <service android:name=".Servico" >
+        </service>
+
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main" >
