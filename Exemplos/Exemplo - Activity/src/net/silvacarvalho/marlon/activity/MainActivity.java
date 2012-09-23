@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.widget.EditText;
 
 /**
  * Uma Activity pode ser entendida como um Controlador dos eventos de uma
@@ -16,7 +17,12 @@ public class MainActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		
+		
+		EditText editText = new EditText(this);
+		editText.setHint("Isso Ž um hint");
+//		setContentView(R.layout.activity_main);
+		setContentView(editText);
 
 		Log.d("CicloDeVidaDaActivity", "OnCreate");
 	}
