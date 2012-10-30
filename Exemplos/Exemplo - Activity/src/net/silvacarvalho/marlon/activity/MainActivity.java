@@ -10,18 +10,23 @@ import android.widget.EditText;
  * Uma Activity pode ser entendida como um Controlador dos eventos de uma
  * "Tela".
  * 
+ * Mas também toda a tela pode ser construída na Activity, entretanto, evite
+ * esta prática.
+ * 
  * @author Marlon Silva Carvalho
  */
 public class MainActivity extends Activity {
- 
+	// Toda Activity precisa ser declarada no AndroidManifest.xml
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
-		
+
+		// Todos os elementos de interface estendem de View.
 		EditText editText = new EditText(this);
 		editText.setHint("Isso é um hint");
-//		setContentView(R.layout.activity_main);
+
+		// setContentView(R.layout.activity_main);
 		setContentView(editText);
 
 		Log.d("CicloDeVidaDaActivity", "OnCreate");

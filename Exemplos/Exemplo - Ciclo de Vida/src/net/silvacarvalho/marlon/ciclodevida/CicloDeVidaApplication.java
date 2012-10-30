@@ -11,6 +11,8 @@ import android.util.Log;
  * @author Marlon Silva Carvalho
  */
 public class CicloDeVidaApplication extends Application {
+	// Estender esta classe Ž opcional.
+	// Uma vez criada, lembre de declarar ela no AndroidManifest.xml
 
 	@Override
 	public void onConfigurationChanged(Configuration newConfig) {
