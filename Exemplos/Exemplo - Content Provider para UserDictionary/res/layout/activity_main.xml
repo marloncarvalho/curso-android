@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/palavra"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/inserir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inserir" />
+
+        <Button
+            android:id="@+id/atualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atualizar" />
+
+        <Button
+            android:id="@+id/remover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remover" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:animateLayoutChanges="true"
+        android:choiceMode="singleChoice" >
+    </ListView>
+
+</LinearLayout>
