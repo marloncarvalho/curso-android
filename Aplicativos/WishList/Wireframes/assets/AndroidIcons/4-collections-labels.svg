@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120"
+	 height="120" xml:space="preserve">
+<g
+     id="g12"
+     transform="matrix(1.25,0,0,-1.25,0,120)">
+<g id='g1424'>
+  <g id='g1426'>
+    <g transform='translate(38.5,25.12)' id='g1432'>
+      <path style='fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none' d='M 0,0 -3.633,3.633 21.93,29.2 25.56,25.57 0,0 z M -11.7,11.7 14.02,37.43 17.65,33.79 -8.072,8.067 -11.7,11.7 z M -14.21,-5.94 C -15.96,-5.94 -17.37,-4.528 -17.37,-2.783 -17.37,-1.042 -15.96,0.372 -14.21,0.372 -12.47,0.372 -11.06,-1.042 -11.06,-2.783 -11.06,-4.528 -12.47,-5.94 -14.21,-5.94 M 14.49,53.02 -22.96,15.87 -23.02,-11.72 4.564,-11.65 42.02,25.5 14.49,53.02 z' id='path1434'/>
+    </g>
+    <g transform='translate(38.02,82.6)' id='g1436'>
+      <path style='fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none' d='M 0,0 -16.73,-30.81 10.12,-4.812 0,0 z' id='path1438'/>
+    </g>
+  </g>
+</g></g>
+</svg>

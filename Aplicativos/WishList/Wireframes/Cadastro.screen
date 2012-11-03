@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Master" id="2" x="144" y="-32" measuredWidth="430" measuredHeight="844">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Phone"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="4" x="182" y="101" measuredWidth="360" measuredHeight="46">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Action%20Bar"/>
+    <overrides>
+      <widgets ref="669" text="WishList do Truta"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="5" x="320" y="176" measuredWidth="206" measuredHeight="31">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Text%20Field"/>
+    <overrides>
+      <widgets ref="478" width="206"/>
+      <widgets ref="479" width="206" text="Nome do Produto"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Image" id="7" x="345" y="396"/>
+  <widgets xsi:type="model:Image" id="8" x="202" y="160" width="97" height="113" measuredWidth="97" measuredHeight="113" src="assets/segredo.jpeg"/>
+  <widgets xsi:type="model:Master" id="10" x="272" y="624" measuredWidth="184" measuredHeight="39">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Button"/>
+    <overrides>
+      <widgets ref="497" text="Salvar"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="11" x="320" y="229" measuredWidth="206" measuredHeight="31">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Text%20Field"/>
+    <overrides>
+      <widgets ref="478" width="206"/>
+      <widgets ref="479" width="206" text="Local (Usando GPS)"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="12" x="202" y="366" measuredWidth="207" measuredHeight="31">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Text%20Field"/>
+    <overrides>
+      <widgets ref="478" width="207"/>
+      <widgets ref="479" width="207" text="Preço Mínimo"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="13" x="202" y="277" measuredWidth="324" measuredHeight="31">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Spinner"/>
+    <overrides>
+      <widgets ref="475" width="268" text="Categoria"/>
+      <widgets ref="474" width="324"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="14" x="418" y="377" measuredWidth="105" measuredHeight="70">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Button"/>
+    <overrides>
+      <widgets ref="497" width="105" height="70" text="Buscapé"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="15" x="200" y="322" measuredWidth="209" measuredHeight="31">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Text%20Field"/>
+    <overrides>
+      <widgets ref="478" width="209"/>
+      <widgets ref="479" width="209" text="Contato"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="16" x="418" y="317" measuredWidth="105" measuredHeight="39">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Button"/>
+    <overrides>
+      <widgets ref="497" width="105" text="Pesquisar"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="19" x="200" y="412" measuredWidth="209" measuredHeight="31">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Text%20Field"/>
+    <overrides>
+      <widgets ref="478" width="209"/>
+      <widgets ref="479" width="209" text="Preço Máximo"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="21" x="202" y="464" measuredWidth="21" measuredHeight="18">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Checkbox%20Selected"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="22" x="230" y="458" measuredWidth="141" measuredHeight="30">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Text%20Size%20Medium"/>
+    <overrides>
+      <widgets ref="5" text="Notificar Preço"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="23" x="266" y="544" measuredWidth="190" measuredHeight="35">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Toast"/>
+    <overrides>
+      <widgets ref="529" text="Item Salvo com Sucesso"/>
+    </overrides>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

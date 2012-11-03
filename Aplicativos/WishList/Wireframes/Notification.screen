@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides">
+  <widgets xsi:type="model:Master" id="1" x="112" y="48" measuredWidth="430" measuredHeight="844">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Phone"/>
+  </widgets>
+  <widgets xsi:type="model:Icon" id="2" x="153" y="160" width="20" height="20" measuredWidth="20" measuredHeight="20" icon="assets/3-rating-not-important (custom)"/>
+  <widgets xsi:type="model:Master" id="8" x="150" y="531" measuredWidth="360" measuredHeight="223">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Keyboard"/>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="9" x="150" y="183" width="356" height="226" measuredWidth="356" measuredHeight="226"/>
+  <widgets xsi:type="model:Master" id="10" x="182" y="159" measuredWidth="208" measuredHeight="23">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Text%20Size%20Micro"/>
+    <overrides>
+      <widgets ref="7" text="WishList - Produto com bom preço">
+        <attributes key="foreground" value="#ffffff"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="12" x="170" y="233" measuredWidth="320" measuredHeight="46">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Text%20Size%20Small"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Insert" newIndex="1">
+        <object xsi:type="model:Label" y="20" text="interessantes para você!">
+          <font size="15px" bold="false"/>
+        </object>
+      </widgetChanges>
+      <widgets ref="6" text="O WishList encontrou produtos com preços"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="13" x="170" y="207" measuredWidth="97" measuredHeight="35">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Text%20Size%20Large"/>
+    <overrides>
+      <widgets ref="4" text="WishList"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Note" id="14" x="560" y="135" height="124" text="Ter um Serviço que checa esses valores" measuredWidth="240" measuredHeight="124" annotation="true">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

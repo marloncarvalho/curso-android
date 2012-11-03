@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120"
+	 height="120" xml:space="preserve">
+<g
+     id="g12"
+     transform="matrix(1.25,0,0,-1.25,0,120)">
+<g id='g88'>
+  <g id='g90'>
+    <path style='fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none' d='M 67.7,37.56 28.07,37.56 28.07,62.3 67.7,62.3 67.7,37.56 z M 72.56,34.48 C 72.57,34.54 72.58,34.59 72.58,34.65 L 72.58,64.84 C 72.58,66.12 71.55,67.15 70.28,67.15 L 25.48,67.15 C 24.21,67.15 23.18,66.12 23.18,64.84 L 23.18,34.65 C 23.18,34.59 23.19,34.53 23.2,34.47 L 16,32.76 16.8,28.85 79.2,28.85 80,32.76 72.56,34.48 z' id='path96'/>
+  </g>
+</g></g>
+</svg>

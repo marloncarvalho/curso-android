@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120"
+	 height="120" xml:space="preserve">
+<g
+     id="g12"
+     transform="matrix(1.25,0,0,-1.25,0,120)">
+<g id='g712'>
+  <g id='g714'>
+    <g transform='translate(77.19,49.36)' id='g720'>
+      <path style='fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none' d='M 0,0 C 0.064,-0.509 0.107,-1.024 0.107,-1.554 0.107,-8.854 -5.835,-14.8 -13.14,-14.8 L -48.9,-14.8 -48.9,-2.83 -67.56,-17.91 -48.9,-32.98 -48.9,-21.81 -13.14,-21.81 C -1.967,-21.81 7.118,-12.72 7.118,-1.554 7.118,0.702 6.737,2.926 5.989,5.071 L 0,0 z' id='path722'/>
+    </g>
+    <g transform='translate(18.8,46.64)' id='g724'>
+      <path style='fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none' d='M 0,0 C -0.064,0.508 -0.102,1.027 -0.102,1.554 -0.102,8.854 5.841,14.8 13.14,14.8 L 48.91,14.8 48.91,2.833 67.56,17.91 48.91,32.98 48.91,21.81 13.14,21.81 C 1.973,21.81 -7.114,12.72 -7.114,1.554 -7.114,-0.699 -6.737,-2.923 -5.985,-5.071 L 0,0 z' id='path726'/>
+    </g>
+  </g>
+</g></g>
+</svg>

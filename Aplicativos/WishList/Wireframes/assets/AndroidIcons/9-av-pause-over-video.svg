@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120"
+	 height="120" xml:space="preserve">
+<g
+     id="g12"
+     transform="matrix(1.25,0,0,-1.25,0,120)">
+<path style='fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none' id='path788' d='M 32.53,32.53 44.91,32.53 44.91,63.47 32.53,63.47 32.53,32.53 z'/><path style='fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none' id='path790' d='M 51.09,32.53 63.47,32.53 63.47,63.47 51.09,63.47 51.09,32.53 z'/><g id='g792'>
+  <g id='g794'>
+    <g transform='translate(48,14.84)' id='g800'>
+      <path style='fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none' id='path802' d='M 0,0 C -18.28,0 -33.16,14.88 -33.16,33.16 -33.16,51.45 -18.28,66.33 0,66.33 18.29,66.33 33.16,51.45 33.16,33.16 33.16,14.88 18.29,0 0,0 M 0,70.24 C -20.44,70.24 -37.07,53.61 -37.07,33.16 -37.07,12.72 -20.44,-3.909 0,-3.909 20.44,-3.909 37.07,12.72 37.07,33.16 37.07,53.61 20.44,70.24 0,70.24'/>
+    </g>
+  </g>
+</g></g>
+</svg>

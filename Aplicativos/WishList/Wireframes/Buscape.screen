@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides">
+  <widgets xsi:type="model:Master" id="1" x="112" y="-24" measuredWidth="430" measuredHeight="844">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Phone"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="2" x="150" y="111" measuredWidth="360" measuredHeight="46">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Action%20Bar"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Delete" ref="693"/>
+      <widgetChanges xsi:type="o:Delete" ref="672"/>
+      <widgets ref="669" text="WishList do Truta"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="3" x="149" y="165" measuredWidth="360" measuredHeight="268">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#List%203%20Lines"/>
+    <overrides>
+      <widgets ref="470" text="LIVROS"/>
+      <widgets ref="471" text="O Segredo 1\nMínimo 10,00\nMáximo 25,00&#xA;O Segredo 2\nMínimo 15,00\nMáximo 35,00&#xA;O Segredo 3\nMínimo 20,00\nMáximo 45,00">
+        <items ref="@items.0" text="O Segredo 1\nMínimo 10,00\nMáximo 25,00"/>
+        <items ref="@items.1" text="O Segredo 2\nMínimo 15,00\nMáximo 35,00"/>
+        <items ref="@items.2" text="O Segredo 3\nMínimo 20,00\nMáximo 45,00"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="4" x="240" y="626" measuredWidth="184" measuredHeight="39">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Button"/>
+    <overrides>
+      <widgets ref="497" text="OK"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="5" x="465" y="117" measuredWidth="33" measuredHeight="33">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Activity%20Indicator"/>
+    <overrides>
+      <widgets ref="507" width="33" height="33"/>
+    </overrides>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

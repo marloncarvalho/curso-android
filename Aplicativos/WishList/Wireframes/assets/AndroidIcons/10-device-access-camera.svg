@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120"
+	 height="120" xml:space="preserve">
+<g
+     id="g12"
+     transform="matrix(1.25,0,0,-1.25,0,120)">
+<g id='g466'>
+  <g id='g468'>
+    <g transform='translate(60.36,44.93)' id='g474'>
+      <path style='fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none' d='M 0,0 C 0,-6.84 -5.543,-12.39 -12.38,-12.39 -19.22,-12.39 -24.77,-6.84 -24.77,0 -24.77,6.835 -19.22,12.38 -12.38,12.38 -5.543,12.38 0,6.835 0,0' id='path476'/>
+    </g>
+    <g transform='translate(47.98,26.84)' id='g478'>
+      <path style='fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none' d='M 0,0 C -9.997,0 -18.1,8.102 -18.1,18.09 -18.1,28.08 -9.997,36.19 0,36.19 9.99,36.19 18.09,28.08 18.09,18.09 18.09,8.102 9.99,0 0,0 M 33.63,41.71 10.78,41.71 10.78,44.28 10.78,47.33 -10.53,47.33 -10.53,44.28 -10.53,41.71 C -10.53,41.71 -12.82,41.75 -14.76,41.71 -16.7,41.68 -18.9,40.95 -18.9,40.95 L -33.6,36.2 C -33.6,36.2 -33.57,34.14 -33.6,32.66 -33.64,31.19 -33.6,-1.934 -33.6,-1.934 L -33.6,-5.014 C -33.6,-5.014 33.55,-5.008 33.63,-5.014 33.72,-5.021 33.63,-3.635 33.63,-1.934 L 33.63,38.63 33.63,41.71 z' id='path480'/>
+    </g>
+    <g transform='translate(27.92,70.12)' id='g482'>
+      <path style='fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none' d='M 0,0 -10.76,-3.645 -10.76,1.289 -10.76,2.238 0,2.238 0,1.289 0,0 z' id='path484'/>
+    </g>
+  </g>
+</g></g>
+</svg>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides">
+  <widgets xsi:type="model:Master" id="1" x="200" y="10" measuredWidth="430" measuredHeight="844">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Phone"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="6" x="238" y="144" measuredWidth="360" measuredHeight="46">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Action%20Bar"/>
+    <overrides>
+      <widgets ref="669" text="WishList do Truta"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="9" x="238" y="200" measuredWidth="360" measuredHeight="268">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#List%203%20Lines"/>
+    <overrides>
+      <widgets ref="470" text="LIVROS"/>
+      <widgets ref="471" text="O Segredo\n%(font:15)Autor João%\n%(font:15)Editora Um%&#xA;O Segredo 2\n%(font:15)Autor João%\n%(font:15)Editora Dois%&#xA;O Segredo 3\n%(font:15)Autor João%\n%(font:15)Editora Três%">
+        <items ref="@items.0" text="O Segredo\n%(font:15)Autor João%\n%(font:15)Editora Um%"/>
+        <items ref="@items.1" text="O Segredo 2\n%(font:15)Autor João%\n%(font:15)Editora Dois%"/>
+        <items ref="@items.2" text="O Segredo 3\n%(font:15)Autor João%\n%(font:15)Editora Três%"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="10" x="328" y="640" measuredWidth="184" measuredHeight="39">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Button"/>
+    <overrides>
+      <widgets ref="497" text="Novo"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="11" x="466" y="189" measuredWidth="131" measuredHeight="102">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android4/Android4.screen#Menu"/>
+    <overrides>
+      <widgets ref="8" text="Compartilhar&#xA;Preferências">
+        <items ref="@items.2" text="Compartilhar"/>
+        <items ref="@items.3" text="Preferências"/>
+        <itemChanges xsi:type="o:Delete" ref="@items.1"/>
+        <itemChanges xsi:type="o:Delete" ref="@items.0"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

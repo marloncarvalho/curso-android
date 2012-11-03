@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120"
+	 height="120" xml:space="preserve">
+<g
+     id="g12"
+     transform="matrix(1.25,0,0,-1.25,0,120)">
+<g id='g696' transform='translate(78.84,78.84)'>
+  <path id='path698' d='M 0,0 -3.266,-21.18 -8.852,-15.59 -20.26,-27 -26.94,-20.31 -15.54,-8.906 -21.18,-3.258 0,0 z' style='fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none'/>
+</g><g id='g700' transform='translate(17.16,17.16)'>
+  <path id='path702' d='M 0,0 3.265,21.18 8.853,15.59 20.26,26.99 26.94,20.31 15.54,8.906 21.18,3.258 0,0 z' style='fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none'/>
+</g><g id='g704' transform='translate(17.16,78.84)'>
+  <path id='path706' d='M 0,0 21.18,-3.261 15.59,-8.854 27,-20.26 20.31,-26.94 8.905,-15.54 3.263,-21.18 0,0 z' style='fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none'/>
+</g><g id='g708' transform='translate(78.84,17.16)'>
+  <path id='path710' d='M 0,0 -21.18,3.262 -15.59,8.854 -26.99,20.26 -20.31,26.94 -8.905,15.54 -3.262,21.18 0,0 z' style='fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none'/>
+</g></g>
+</svg>

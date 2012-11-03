@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120"
+	 height="120" xml:space="preserve">
+<g
+     id="g12"
+     transform="matrix(1.25,0,0,-1.25,0,120)">
+<g id='g120'>
+  <g id='g122'>
+    <g transform='translate(80.57,80.61)' id='g128'>
+      <path style='fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none' d='M 0,0 C -2.461,2.511 -6.738,1.851 -12.34,-3.819 L -24.84,-16.33 -60.46,-9.409 -66.34,-15.4 -34.37,-27.25 -48.87,-43.38 -63.81,-40.44 -66.57,-43.27 -51.81,-53.33 -43.59,-66.61 -40.82,-63.79 -42.78,-49.55 -27.28,-34.89 -15.94,-66.6 -10.06,-60.61 -16.18,-25.27 -3.599,-12.71 C 1.98,-7.02 2.49,-2.52 0,0' id='path130'/>
+    </g>
+  </g>
+</g></g>
+</svg>

@@ -1,10 +1,16 @@
 package net.silvacarvalho.marlon.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
 /**
  * Uma Activity pode ser entendida como um Controlador dos eventos de uma
@@ -22,12 +28,33 @@ public class MainActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
+		Log.d("CicloDeVidaDaActivity", "SavedInstanceState: " + savedInstanceState);
+		if (savedInstanceState != null) {
+			Toast.makeText(this, savedInstanceState.getString("Chave"), Toast.LENGTH_LONG).show();
+		}
+
 		// Todos os elementos de interface estendem de View.
+		LinearLayout linearLayout = new LinearLayout(this);
+		linearLayout.setOrientation(LinearLayout.VERTICAL);
+
+		Button button = new Button(this);
+		button.setText("OK");
+		button.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(MainActivity.this, MainActivity2.class));
+			}
+
+		});
+
 		EditText editText = new EditText(this);
 		editText.setHint("Isso Ž um hint");
 
-		// setContentView(R.layout.activity_main);
-		setContentView(editText);
+		linearLayout.addView(editText);
+		linearLayout.addView(button);
+
+		setContentView(linearLayout);
 
 		Log.d("CicloDeVidaDaActivity", "OnCreate");
 	}
@@ -85,6 +112,13 @@ public class MainActivity extends Activity {
 		super.onRestart();
 
 		Log.d("CicloDeVidaDaActivity", "OnRestart");
+	}
+
+	@Override
+	protected void onSaveInstanceState(Bundle outState) {
+		Log.d("CicloDeVidaDaActivity", "onSaveInstanceState");
+		super.onSaveInstanceState(outState);
+		outState.putString("Chave", "Merda!");
 	}
 
 }
