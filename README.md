@@ -10,3 +10,11 @@ Você pode ver logo acima algumas pastas que compõem este repositório. Vamos e
 * Slides: Você tem nesta pasta os slides que uso para apresentar os conceitos sobre a plataforma.
 * Cards: São Cards, no estilo dos RefCards da DZone, que exploram assuntos específicos de forma mais detalhada.
 * Referências: São referências a materiais externos gratuitos. Tem apostilas de cursos, Cards e etc.
+
+## Contatos
+Para entrar em contato comigo, acessem meu Twitter @marlonscarvalho ou e-mail marlon.carvalho@gmail.com.
+
+## Licença
+Todo o material produzido por mim está sob licença Atribuição – Uso Não Comercial – Compartilhamento pela mesma Licença (by-nc-sa).
+Não entram nesta licença os materiais que você encontra na pasta Referências, pois são materiais de terceiros e com 
+licenças específicas.
