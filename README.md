@@ -15,6 +15,6 @@ Você pode ver logo acima algumas pastas que compõem este repositório. Vamos e
 Para entrar em contato comigo, acessem meu Twitter @marlonscarvalho ou e-mail marlon.carvalho@gmail.com.
 
 ## Licença
-Todo o material produzido por mim está sob licença Atribuição – Uso Não Comercial – Compartilhamento pela mesma Licença (by-nc-sa).
+Todo o material produzido por mim está sob licença Creative Commons - Atribuição – Uso Não Comercial – Compartilhamento pela mesma Licença (by-nc-sa).
 Não entram nesta licença os materiais que você encontra na pasta Referências, pois são materiais de terceiros e com 
 licenças específicas.
