@@ -27,6 +27,7 @@
     </EditText>
 
     <EditText
+        style="@style/CamposTexto"
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,6 +36,7 @@
         android:ems="10" />
 
     <Button
+        android:textColor="@color/colors"
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
