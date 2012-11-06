@@ -3,10 +3,12 @@ package com.alienlabz.popup.menu;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.PopupMenu;
+import android.widget.PopupMenu.OnMenuItemClickListener;
 
 public class MainActivity extends Activity {
 	private Button button;
@@ -24,6 +26,14 @@ public class MainActivity extends Activity {
 				PopupMenu popupMenu = new PopupMenu(MainActivity.this, button);
 				MenuInflater inflater = popupMenu.getMenuInflater();
 				inflater.inflate(R.menu.activity_main, popupMenu.getMenu());
+				popupMenu.setOnMenuItemClickListener(new OnMenuItemClickListener() {
+
+					@Override
+					public boolean onMenuItemClick(MenuItem item) {
+						return false;
+					}
+
+				});
 				popupMenu.show();
 			}
 

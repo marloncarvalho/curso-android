@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Exemplo - ActionBar</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">App</string>
+    <string name="title_activity_narrow">NarrowActivity</string>
+    <string name="title_activity_view_class">ViewClassActivity</string>
+    <string name="title_activity_tab">TabActivity</string>
+
+</resources>
