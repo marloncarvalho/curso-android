@@ -8,7 +8,12 @@ public class PreferenciasActivity extends PreferenceActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		addPreferencesFromResource(R.xml.preferencias);
+		// addPreferencesFromResource(R.xml.preferencias);
+
+		getFragmentManager()
+			.beginTransaction()
+			.replace(android.R.id.content, new PreferenciasFragment())
+			.commit();
 	}
 
 }

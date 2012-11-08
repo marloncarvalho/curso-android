@@ -31,7 +31,7 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 				final Intent emailIntent = new Intent(Intent.ACTION_SEND);
 				emailIntent.setType("text/plain");
-				emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[] {para.getText().toString()});
+				emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[] { para.getText().toString() });
 				emailIntent.putExtra(Intent.EXTRA_SUBJECT, assunto.getText().toString());
 				emailIntent.putExtra(Intent.EXTRA_TEXT, texto.getText().toString());
 				startActivity(Intent.createChooser(emailIntent, "Send mail..."));
