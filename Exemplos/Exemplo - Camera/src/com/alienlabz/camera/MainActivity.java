@@ -3,7 +3,6 @@ package com.alienlabz.camera;
 import java.io.File;
 
 import android.app.Activity;
-import android.content.ContentResolver;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -51,22 +50,20 @@ public class MainActivity extends Activity {
 
 		switch (requestCode) {
 
-			case TAKE_PICTURE:
-	
-				if (resultCode == Activity.RESULT_OK) {
-					Uri selectedImage = imageUri;
-					ContentResolver cr = getContentResolver();
-					Bitmap bitmap;
-					try {
-						bitmap = android.provider.MediaStore.Images.Media.getBitmap(cr, selectedImage);
-	
-						imageView.setImageBitmap(bitmap);
-						Toast.makeText(this, selectedImage.toString(), Toast.LENGTH_LONG).show();
-					} catch (Exception e) {
-						Toast.makeText(this, "Failed to load", Toast.LENGTH_SHORT).show();
-						Log.e("Camera", e.toString());
-					}
+		case TAKE_PICTURE:
+
+			if (resultCode == Activity.RESULT_OK) {
+				Uri selectedImage = imageUri;
+				Bitmap bitmap;
+				try {
+					bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), selectedImage);
+
+					imageView.setImageBitmap(bitmap);
+					Toast.makeText(this, selectedImage.toString(), Toast.LENGTH_LONG).show();
+				} catch (Exception e) {
+					Log.e("Camera", e.toString());
 				}
+			}
 
 		}
 
