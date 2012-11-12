@@ -1,14 +1,13 @@
 package net.silvacarvalho.marlon.preferencias;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
 
-public class PreferenciasActivity extends PreferenceActivity {
+public class PreferenciasActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		// addPreferencesFromResource(R.xml.preferencias);
 
 		getFragmentManager()
 			.beginTransaction()

@@ -9,6 +9,7 @@ public class NossoContentProvider extends ContentProvider {
 
 	@Override
 	public int delete(Uri uri, String selection, String[] selectionArgs) {
+//		"content://com.alienlabz.provider/tabela1/1"
 		return 0;
 	}
 

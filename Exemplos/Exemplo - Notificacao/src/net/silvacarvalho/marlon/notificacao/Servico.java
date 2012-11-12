@@ -31,7 +31,7 @@ public class Servico extends IntentService {
 		builder.setTicker("Olha a Faaaaca!");
 		builder.setContentTitle("Content Title");
 		builder.setContentText("Content Text");
-		builder.setContentInfo("Content Info");
+		builder.setContentInfo("Content Info"); 
 		builder.setVibrate(new long[] { 0, 100, 100, 200, 100, 200 });
 		builder.setLights(0xff00ff00, 300, 100);
 
@@ -40,6 +40,9 @@ public class Servico extends IntentService {
 		PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, i, 0);
 		builder.setContentIntent(pendingIntent);
 
-		notificationManager.notify(1, builder.build());
+		Notification not = builder.build();
+		not.flags = Notification.FLAG_AUTO_CANCEL;
+
+		notificationManager.notify(1, not);
 	}
 }
