@@ -1,0 +1,6 @@
+<resources>
+
+    <integer name="inteiro_1">1</integer>
+    <integer name="inteiro_5">5</integer>
+
+</resources>

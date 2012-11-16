@@ -28,6 +28,7 @@ public class MainActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
+		// Verificar se foi salvo um estado em onSaveInstanceState().
 		Log.d("CicloDeVidaDaActivity", "SavedInstanceState: " + savedInstanceState);
 		if (savedInstanceState != null) {
 			Toast.makeText(this, savedInstanceState.getString("Chave"), Toast.LENGTH_LONG).show();
@@ -112,6 +113,17 @@ public class MainActivity extends Activity {
 		super.onRestart();
 
 		Log.d("CicloDeVidaDaActivity", "OnRestart");
+	}
+
+	@Override
+	protected void onRestoreInstanceState(Bundle savedInstanceState) {
+		super.onRestoreInstanceState(savedInstanceState);
+
+		// Verificar se foi salvo um estado em onSaveInstanceState().
+		Log.d("CicloDeVidaDaActivity", "onRestoreInstanceState: " + savedInstanceState);
+		if (savedInstanceState != null) {
+			Toast.makeText(this, savedInstanceState.getString("Chave"), Toast.LENGTH_LONG).show();
+		}
 	}
 
 	@Override
