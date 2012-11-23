@@ -9,7 +9,7 @@ public class TelefoneReceiver extends BroadcastReceiver {
 
 	@Override
 	public void onReceive(Context context, Intent intent) {
-		Toast.makeText(context, "LIGA‚ÌO", Toast.LENGTH_LONG).show();
+		Toast.makeText(context, "LIGA‚ÌO: ", Toast.LENGTH_LONG).show();
 	}
 
 }

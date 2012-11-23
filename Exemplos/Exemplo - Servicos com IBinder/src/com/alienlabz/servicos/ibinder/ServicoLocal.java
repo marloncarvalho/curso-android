@@ -13,6 +13,7 @@ import android.os.IBinder;
  */
 public class ServicoLocal extends Service {
 	private IBinder binder = new LocalBinder();
+	private int valor = 1;
 
 	@Override
 	public IBinder onBind(Intent intent) {
@@ -28,7 +29,7 @@ public class ServicoLocal extends Service {
 	}
 
 	public String meDeAParada() {
-		return "Drogas!";
+		return "--> " + valor++;
 	}
 
 }

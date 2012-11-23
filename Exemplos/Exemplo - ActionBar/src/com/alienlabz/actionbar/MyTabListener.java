@@ -21,7 +21,7 @@ public class MyTabListener<T extends Fragment> implements TabListener {
 	public void onTabSelected(Tab tab, FragmentTransaction ft) {
 		if (mFragment == null) {
 			mFragment = Fragment.instantiate(mActivity, mClass.getName());
-			ft.add(android.R.id.content, mFragment, mTag);
+			ft.replace(android.R.id.content, mFragment);
 		} else {
 			ft.attach(mFragment);
 		}

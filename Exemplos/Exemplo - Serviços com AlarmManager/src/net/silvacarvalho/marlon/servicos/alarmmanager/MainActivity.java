@@ -27,9 +27,13 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(MainActivity.this, ServicoIntent.class);
+
 				pendingIntent = PendingIntent.getService(MainActivity.this, 0, intent, 0);
+
 				AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
-				alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, Calendar.getInstance().getTimeInMillis(), 1000,
+
+				alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, 
+						Calendar.getInstance().getTimeInMillis(), 5000,
 						pendingIntent);
 			}
 

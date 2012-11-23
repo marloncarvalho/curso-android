@@ -36,7 +36,9 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 				Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 				File photo = new File(Environment.getExternalStorageDirectory(), "Pic.jpg");
+
 				intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(photo));
+
 				imageUri = Uri.fromFile(photo);
 				startActivityForResult(intent, TAKE_PICTURE);
 			}
@@ -59,7 +61,9 @@ public class MainActivity extends Activity {
 					bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), selectedImage);
 
 					imageView.setImageBitmap(bitmap);
+
 					Toast.makeText(this, selectedImage.toString(), Toast.LENGTH_LONG).show();
+
 				} catch (Exception e) {
 					Log.e("Camera", e.toString());
 				}

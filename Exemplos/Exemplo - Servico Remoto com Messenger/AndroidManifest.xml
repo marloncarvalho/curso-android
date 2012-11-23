@@ -11,6 +11,11 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <service
+            android:name=""
+            android:exported="true" >
+        </service>
+
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main" >

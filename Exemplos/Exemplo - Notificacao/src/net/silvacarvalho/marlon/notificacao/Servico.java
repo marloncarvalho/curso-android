@@ -18,7 +18,7 @@ public class Servico extends IntentService {
 	protected void onHandleIntent(Intent intent) {
 
 		try {
-			Thread.sleep(1000 * 10);
+			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -31,9 +31,10 @@ public class Servico extends IntentService {
 		builder.setTicker("Olha a Faaaaca!");
 		builder.setContentTitle("Content Title");
 		builder.setContentText("Content Text");
-		builder.setContentInfo("Content Info"); 
+		builder.setContentInfo("Content Info");
+		builder.setDefaults(Notification.DEFAULT_ALL);
 		builder.setVibrate(new long[] { 0, 100, 100, 200, 100, 200 });
-		builder.setLights(0xff00ff00, 300, 100);
+		builder.setLights(0xff000000, 10, 10);
 
 		Intent i = new Intent(this, Main2Activity.class);
 
@@ -41,8 +42,9 @@ public class Servico extends IntentService {
 		builder.setContentIntent(pendingIntent);
 
 		Notification not = builder.build();
-		not.flags = Notification.FLAG_AUTO_CANCEL;
+		not.flags = Notification.FLAG_AUTO_CANCEL | Notification.FLAG_SHOW_LIGHTS;
 
 		notificationManager.notify(1, not);
 	}
+
 }

@@ -1,9 +1,8 @@
 package net.silvacarvalho.marlon.intenthandler;
 
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-import android.view.Menu;
+import android.os.Bundle;
 
 public class MainActivity extends Activity {
 
@@ -14,11 +13,10 @@ public class MainActivity extends Activity {
 
 		Intent intent = new Intent(this, MeuIntentService.class);
 		startService(intent);
+		startService(intent);
+		startService(intent);
+		startService(intent);
+		startService(intent);
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.activity_main, menu);
-		return true;
-	}
 }
