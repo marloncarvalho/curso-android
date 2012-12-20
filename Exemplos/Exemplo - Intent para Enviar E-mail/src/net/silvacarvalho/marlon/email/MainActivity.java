@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
 				emailIntent.putExtra(Intent.EXTRA_SUBJECT, assunto.getText().toString());
 				emailIntent.putExtra(Intent.EXTRA_TEXT, texto.getText().toString());
 
-				startActivity(Intent.createChooser(emailIntent, "Send mail..."));
+				startActivity(emailIntent);
 			}
 
 		});

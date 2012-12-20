@@ -15,9 +15,7 @@
             android:name=".MainActivity"
             android:label="@string/title_activity_main" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="com.marlon.acao" />
             </intent-filter>
         </activity>
     </application>

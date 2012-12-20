@@ -1,6 +1,7 @@
 package com.alienlabz.expandablelistview;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ExpandableListView;
 
@@ -22,6 +23,12 @@ public class MainActivity extends Activity {
 		adapter.add("Grupo 2", "G2 V2");
 		adapter.add("Grupo 2", "G2 V3");
 		listView.setAdapter(adapter);
+		
+		
+		Intent intent = new Intent();
+		intent.setAction("com.marlon.acao");
+		startActivity(intent);
 	}
+	
 	
 }

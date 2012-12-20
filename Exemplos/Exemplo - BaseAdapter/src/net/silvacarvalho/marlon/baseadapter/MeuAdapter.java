@@ -23,6 +23,11 @@ public class MeuAdapter extends BaseAdapter {
 		lista.add("Teste 5");
 		lista.add("Teste 6");
 		lista.add("Teste 7");
+		lista.add("Teste 7");
+		lista.add("Teste 7");
+		lista.add("Teste 7");
+		lista.add("Teste 7");
+		lista.add("Teste 7");
 	}
 
 	@Override
