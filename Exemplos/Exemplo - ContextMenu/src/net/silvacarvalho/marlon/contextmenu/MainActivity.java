@@ -3,30 +3,66 @@ package net.silvacarvalho.marlon.contextmenu;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.ContextMenu;
-import android.view.Menu;
-import android.view.View;
 import android.view.ContextMenu.ContextMenuInfo;
-import android.view.View.OnClickListener;
-import android.widget.Button;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Toast;
+import android.widget.AdapterView.OnItemLongClickListener;
+import android.widget.ListView;
 
 public class MainActivity extends Activity {
-	private Button button;
+	private ListView listView;
+	private String selected;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		button = (Button) findViewById(R.id.button);
-		registerForContextMenu(button);
-		button.setOnClickListener(new OnClickListener() {
+		listView = (ListView) findViewById(R.id.listView);
+
+		registerForContextMenu(listView);
+		listView.setOnItemLongClickListener(new OnItemLongClickListener() {
 
 			@Override
-			public void onClick(View v) {
-				openContextMenu(button);
+			public boolean onItemLongClick(AdapterView<?> adapterView, View view, int position, long id) {
+				openContextMenu(listView);
+				selected = (String) listView.getItemAtPosition(position);
+				
+				System.out.println(listView.getSelectedItem());
+				return true;
 			}
 
 		});
+
+		listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
+
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,
+				android.R.id.text1);
+		adapter.add("Linha 1");
+		adapter.add("Linha 2");
+		adapter.add("Linha 3");
+		adapter.add("Linha 4");
+		adapter.add("Linha 5");
+		adapter.add("Linha 6");
+
+		listView.setAdapter(adapter);
+	}
+
+	@Override
+	protected void onPause() {
+		super.onPause();
+	}
+
+	@Override
+	public boolean onContextItemSelected(MenuItem item) {
+		if (item.getItemId() == R.id.menu_delete) {
+			Toast.makeText(this, "Removeu: " + selected, Toast.LENGTH_LONG).show();
+		}
+		return true;
 	}
 
 	@Override

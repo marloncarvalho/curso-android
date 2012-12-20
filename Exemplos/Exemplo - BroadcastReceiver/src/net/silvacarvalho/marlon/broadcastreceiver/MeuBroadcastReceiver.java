@@ -9,7 +9,7 @@ public class MeuBroadcastReceiver extends BroadcastReceiver {
 
 	@Override
 	public void onReceive(Context context, Intent intent) {
-		Toast.makeText(context, "Broadcast", Toast.LENGTH_LONG).show();
+		Toast.makeText(context, "Meu Broadcast!", Toast.LENGTH_LONG).show();
 	}
 
 }
