@@ -19,6 +19,30 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		listView = (ListView) findViewById(R.id.listView1);
 
+		new AsyncTask<String, Void, String>() {
+
+			@Override
+			protected void onPreExecute() {
+				listView.setAdapter(null);
+			}
+
+			protected String doInBackground(String... params) {
+				publishProgress();
+
+				return "Teste";
+			}
+
+			@Override
+			protected void onPostExecute(String result) {
+				listView.setAdapter(null);
+			}
+
+			protected void onProgressUpdate(Void... values) {
+
+			}
+
+		}.execute("Param1");
+
 		new AsyncTask<Void, Void, ArrayAdapter<String>>() {
 
 			@Override

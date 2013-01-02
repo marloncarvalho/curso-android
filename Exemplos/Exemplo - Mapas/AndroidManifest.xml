@@ -34,6 +34,10 @@
         <activity
             android:name="com.alienlabz.exemplo.mapas.MainActivity"
             android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.alienlabz.exemplo.mapas.MapaActivity"
+            android:label="@string/title_activity_mapa" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
