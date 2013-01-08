@@ -16,11 +16,6 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-//		String name = "First Family";
-//		ContentValues values = new ContentValues();
-//		values.put(Data.DISPLAY_NAME, name);
-//		getContentResolver().insert(RawContacts.CONTENT_URI, values);
-
 		listView = (ListView) findViewById(R.id.listView1);
 
 		final Cursor cursor = 
