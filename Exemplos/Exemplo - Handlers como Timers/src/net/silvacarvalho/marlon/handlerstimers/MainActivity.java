@@ -28,8 +28,7 @@ public class MainActivity extends Activity {
 
 					@Override
 					public void run() {
-						Toast.makeText(MainActivity.this, "Tempo!",
-								Toast.LENGTH_SHORT).show();
+						Toast.makeText(MainActivity.this, "Tempo!", Toast.LENGTH_SHORT).show();
 					}
 
 				}, 5000);

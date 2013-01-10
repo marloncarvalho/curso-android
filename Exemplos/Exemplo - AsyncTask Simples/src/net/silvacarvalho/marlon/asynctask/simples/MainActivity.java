@@ -3,7 +3,6 @@ package net.silvacarvalho.marlon.asynctask.simples;
 import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -12,7 +11,8 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
 	private Button button;
 	private TextView textView;
-
+	private AsyncTask<Void, Void, Void> task;
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -25,27 +25,38 @@ public class MainActivity extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				new AsyncTask<Void, Void, Void>() {
+				task = new AsyncTask<Void, Void, Void>() {
 
 					@Override
 					protected Void doInBackground(Void... params) {
+
+//						isCancelled();
 						return null;
 					}
-					
+
 					@Override
 					protected void onPostExecute(Void result) {
-						
-					}
-					
-				};
-			}
 
+					}
+
+					@Override
+					protected void onCancelled() {
+						super.onCancelled();
+					}
+
+				};
+
+				task.execute();
+			}
 		});
 	}
 
 	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.activity_main, menu);
-		return true;
+	protected void onDestroy() {
+		super.onDestroy();
+		if(task!=null) {
+			task.cancel(true);
+		}
 	}
+
 }

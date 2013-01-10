@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alienlabz.exemplo.sensores"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.alienlabz.exemplo.sensores.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.alienlabz.exemplo.sensores.LightActivity"
+            android:label="@string/title_activity_light_sensor" >
+        </activity>
+        <activity
+            android:name="com.alienlabz.exemplo.sensores.ProximityActivity"
+            android:label="@string/title_activity_proximity_sensor" >
+        </activity>
+        <activity
+            android:name="com.alienlabz.exemplo.sensores.PressureActivity"
+            android:label="@string/title_activity_barometer_sensor" >
+        </activity>
+        <activity
+            android:name="com.alienlabz.exemplo.sensores.GyroscopeActivity"
+            android:label="@string/title_activity_gyroscope" >
+        </activity>
+        <activity
+            android:name="com.alienlabz.exemplo.sensores.GravityActivity"
+            android:label="@string/title_activity_gravity" >
+        </activity>
+        <activity
+            android:name="com.alienlabz.exemplo.sensores.AccelerometerActivity"
+            android:label="@string/title_activity_accelerometer" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

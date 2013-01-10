@@ -25,6 +25,8 @@ public class MainActivity extends Activity {
 
 			@Override
 			public void handleMessage(Message msg) {
+				button.setText("Bot‹o");
+
 				Toast.makeText(MainActivity.this, msg.obj.toString(), Toast.LENGTH_LONG).show();
 			}
 
@@ -37,16 +39,19 @@ public class MainActivity extends Activity {
 
 			@Override
 			public void onClick(View v) {
+
 				new Thread(new Runnable() {
 
 					@Override
 					public void run() {
+
 						Message msg = Message.obtain();
 						msg.obj = "obj";
 						msg.arg1 = 1;
 						msg.arg2 = 2;
 
 						handler.sendMessage(msg);
+
 						handler.post(new Runnable() {
 
 							@Override

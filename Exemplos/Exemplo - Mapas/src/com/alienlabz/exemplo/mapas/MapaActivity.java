@@ -3,7 +3,6 @@ package com.alienlabz.exemplo.mapas;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.view.Menu;
 import android.widget.Toast;
 
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
@@ -53,10 +52,8 @@ public class MapaActivity extends Activity {
 
 	private void createPolyline() {
 		PolylineOptions rectOptions = new PolylineOptions().add(new LatLng(37.35, -122.0))
-				.add(new LatLng(-12.990481, -38.4947624))
-				.add(new LatLng(-12.990485, -38.4947629))
-				.add(new LatLng(-12.990490, -38.4947630))
-				.add(new LatLng(-12.990500, -38.4947645));
+				.add(new LatLng(-12.990481, -38.4947624)).add(new LatLng(-12.990485, -38.4947629))
+				.add(new LatLng(-12.990490, -38.4947630)).add(new LatLng(-12.990500, -38.4947645));
 
 		rectOptions.color(Color.RED);
 
@@ -85,12 +82,6 @@ public class MapaActivity extends Activity {
 	public void onSaveInstanceState(Bundle outState) {
 		super.onSaveInstanceState(outState);
 		mapView.onSaveInstanceState(outState);
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.activity_mapa, menu);
-		return true;
 	}
 
 }

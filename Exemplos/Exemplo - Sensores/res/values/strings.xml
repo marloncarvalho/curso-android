@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Exemplo - Sensores</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_light_sensor">LightSensorActivity</string>
+    <string name="title_activity_proximity_sensor">ProximitySensorActivity</string>
+    <string name="title_activity_barometer_sensor">BarometerSensorActivity</string>
+    <string name="title_activity_gyroscope">GyroscopeActivity</string>
+    <string name="title_activity_gravity">GravityActivity</string>
+    <string name="title_activity_accelerometer">AccelerometerActivity</string>
+
+</resources>

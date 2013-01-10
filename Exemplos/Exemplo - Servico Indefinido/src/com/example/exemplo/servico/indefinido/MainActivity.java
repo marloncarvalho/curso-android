@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 
 		Intent intent = new Intent(MainActivity.this, Servico.class);
-		startService(intent);
+//		startService(intent);
 
 		button = (Button) findViewById(R.id.button);
 		button.setOnClickListener(new OnClickListener() {

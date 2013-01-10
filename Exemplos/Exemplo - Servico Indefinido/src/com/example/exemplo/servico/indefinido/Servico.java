@@ -11,11 +11,6 @@ public class Servico extends Service {
 	private int valor = 1;
 
 	@Override
-	public IBinder onBind(Intent intent) {
-		return binder;
-	}
-
-	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
 
 		Log.d("SERVICO DEBUG", "onStartCommand");
@@ -31,12 +26,26 @@ public class Servico extends Service {
 					} catch (InterruptedException e) {
 						e.printStackTrace();
 					}
+
+					Intent intent = new Intent(Servico.this, MainActivity.class);
+					startActivity(intent);
+
+					sendBroadcast(intent);
 				}
 
 			}
 		}).start();
 
 		return Service.START_STICKY;
+	}
+
+	@Override
+	public IBinder onBind(Intent intent) {
+		return binder;
+	}
+
+	public String getValor() {
+		return "ALGO: " + valor;
 	}
 
 	public class LocalBinder extends Binder {
@@ -47,7 +56,4 @@ public class Servico extends Service {
 
 	}
 
-	public String getValor() {
-		return "ALGO: " + valor;
-	}
 }
