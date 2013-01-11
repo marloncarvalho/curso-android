@@ -10,6 +10,19 @@ import android.widget.Toast;
 
 public class ProximityActivity extends Activity {
 	private SensorManager sensorManager;
+	private SensorEventListener listener = new SensorEventListener() {
+
+		@Override
+		public void onSensorChanged(SensorEvent event) {
+			Toast.makeText(ProximityActivity.this, "Sensor: " + event.values[0], Toast.LENGTH_SHORT).show();
+		}
+
+		@Override
+		public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
+		}
+
+	};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -19,20 +32,14 @@ public class ProximityActivity extends Activity {
 		sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
 
 		Sensor lightSensor = sensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
-		sensorManager.registerListener(new SensorEventListener() {
+		sensorManager.registerListener(listener, lightSensor, SensorManager.SENSOR_DELAY_NORMAL);
 
-			@Override
-			public void onSensorChanged(SensorEvent event) {
-				Toast.makeText(ProximityActivity.this, "Sensor: " + event.values[0], Toast.LENGTH_SHORT).show();
-			}
+	}
 
-			@Override
-			public void onAccuracyChanged(Sensor sensor, int accuracy) {
-
-			}
-
-		}, lightSensor, SensorManager.SENSOR_DELAY_NORMAL);
-
+	@Override
+	protected void onPause() {
+		super.onPause();
+		sensorManager.unregisterListener(listener);
 	}
 
 }

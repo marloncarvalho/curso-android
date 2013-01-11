@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.alienlabz.actionbar"
     android:versionCode="1"
@@ -12,30 +13,39 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".DropDownNavigationActivity"
+            android:name="com.alienlabz.actionbar.DropDownNavigationActivity"
             android:label="@string/title_activity_main" >
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.alienlabz.actionbar.MainActivity"
             android:label="@string/title_activity_main" >
         </activity>
         <activity
-            android:name=".NarrowActivity"
+            android:name="com.alienlabz.actionbar.NarrowActivity"
             android:label="@string/title_activity_narrow"
             android:uiOptions="splitActionBarWhenNarrow" >
         </activity>
         <activity
-            android:name=".ViewClassActivity"
+            android:name="com.alienlabz.actionbar.ViewClassActivity"
             android:label="App" >
         </activity>
         <activity
-            android:name=".TabActivity"
+            android:name="com.alienlabz.actionbar.TabActivity"
             android:label="@string/title_activity_tab" >
+        </activity>
+        <activity
+            android:name="com.alienlabz.actionbar.viewpager.ViewPagerActivity"
+            android:label="@string/title_activity_view_pager" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.alienlabz.actionbar.tabswipe.TabSwipeActivity"
+            android:label="@string/title_activity_tab_swipe" >
         </activity>
     </application>
 

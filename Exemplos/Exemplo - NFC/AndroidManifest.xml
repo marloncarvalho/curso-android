@@ -23,20 +23,28 @@
         <activity
             android:name="com.alienlabz.nfc.MainActivity"
             android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.alienlabz.nfc.NFCActivity"
-            android:label="@string/title_activity_nfc"
-            tools:ignore="ExportedActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:launchMode="singleTask"
+            android:name="com.alienlabz.nfc.NFCActivity"
+            android:label="@string/title_activity_nfc" >
+            <intent-filter>
+                <intent-filter>
+                    <action android:name="android.nfc.action.TECH_DISCOVERED" />
+                    <action android:name="android.nfc.action.TAG_DISCOVERED" />
 
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.nfc.action.TAG_DISCOVERED" /> -->
-            <!-- </intent-filter> -->
+                    <category android:name="android.intent.category.DEFAULT" />
+                </intent-filter>
+
+                <meta-data
+                    android:name="android.nfc.action.TECH_DISCOVERED"
+                    android:resource="@xml/filter_nfc" />
+            </intent-filter>
         </activity>
     </application>
 

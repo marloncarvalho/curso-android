@@ -51,6 +51,8 @@ import android.os.Bundle;
 	  android:layout_height="match_parent"
 	  class="com.google.android.gms.maps.MapFragment"/>
 	  
+	  Se for para rodar na API abaixo de 11, deve usar com.google.android.gms.maps.SupportMapFragment
+	  
 9. Referenciar o Projeto Google Play Services que est‡ na SDK
  */
 public class MainActivity extends Activity {

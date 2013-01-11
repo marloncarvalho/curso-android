@@ -1,11 +1,11 @@
 package com.alienlabz.nfc;
 
 import android.app.Activity;
-import android.app.PendingIntent;
 import android.content.Intent;
 import android.nfc.NfcAdapter;
 import android.nfc.Tag;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 /**
@@ -35,12 +35,12 @@ public class NFCActivity extends Activity {
 	protected void onResume() {
 		super.onResume();
 
-		final NfcAdapter nfcAdapter = NfcAdapter.getDefaultAdapter(this);
-		if (nfcAdapter != null) {
-			final PendingIntent intent = PendingIntent.getActivity(this, 0,
-					new Intent(this, getClass()).addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP), 0, null);
-			nfcAdapter.enableForegroundDispatch(this, intent, null, null);
-		}
+//		final NfcAdapter nfcAdapter = NfcAdapter.getDefaultAdapter(this);
+//		if (nfcAdapter != null) {
+//			final PendingIntent intent = PendingIntent.getActivity(this, 0,
+//					new Intent(this, getClass()).addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP), 0, null);
+//			nfcAdapter.enableForegroundDispatch(this, intent, null, null);
+//		}
 
 		final String action = getIntent().getAction();
 		if (NfcAdapter.ACTION_NDEF_DISCOVERED.equals(action)) {
@@ -53,6 +53,7 @@ public class NFCActivity extends Activity {
 		super.onNewIntent(intent);
 		Toast.makeText(this, "NFC", Toast.LENGTH_SHORT).show();
 		Tag tag = (Tag) intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
+		Log.d("TESTE", tag.getTechList().toString());
 	}
 
 }

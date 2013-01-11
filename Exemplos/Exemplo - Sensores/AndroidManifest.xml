@@ -40,6 +40,10 @@
         <activity
             android:name="com.alienlabz.exemplo.sensores.AccelerometerActivity"
             android:label="@string/title_activity_accelerometer" >
+        </activity>
+        <activity
+            android:name="com.alienlabz.exemplo.sensores.ShakeActivity"
+            android:label="@string/title_activity_shake" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

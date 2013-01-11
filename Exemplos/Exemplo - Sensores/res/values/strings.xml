@@ -10,5 +10,6 @@
     <string name="title_activity_gyroscope">GyroscopeActivity</string>
     <string name="title_activity_gravity">GravityActivity</string>
     <string name="title_activity_accelerometer">AccelerometerActivity</string>
+    <string name="title_activity_shake">ShakeActivity</string>
 
 </resources>

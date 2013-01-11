@@ -10,6 +10,21 @@ import android.widget.Toast;
 
 public class GyroscopeActivity extends Activity {
 	private SensorManager sensorManager;
+	private SensorEventListener listener = new SensorEventListener() {
+
+		@Override
+		public void onSensorChanged(SensorEvent event) {
+			Toast.makeText(GyroscopeActivity.this,
+					"Sensor: " + event.values[0] + ", " + event.values[1] + ", " + event.values[2], Toast.LENGTH_SHORT)
+					.show();
+		}
+
+		@Override
+		public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
+		}
+
+	};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -19,22 +34,13 @@ public class GyroscopeActivity extends Activity {
 		sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
 
 		Sensor lightSensor = sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
-		sensorManager.registerListener(new SensorEventListener() {
+		sensorManager.registerListener(listener, lightSensor, SensorManager.SENSOR_DELAY_NORMAL);
+	}
 
-			@Override
-			public void onSensorChanged(SensorEvent event) {
-				Toast.makeText(GyroscopeActivity.this,
-						"Sensor: " + event.values[0] + ", " + event.values[1] + ", " + event.values[2],
-						Toast.LENGTH_SHORT).show();
-			}
-
-			@Override
-			public void onAccuracyChanged(Sensor sensor, int accuracy) {
-
-			}
-
-		}, lightSensor, SensorManager.SENSOR_DELAY_NORMAL);
-
+	@Override
+	protected void onPause() {
+		super.onPause();
+		sensorManager.unregisterListener(listener);
 	}
 
 }

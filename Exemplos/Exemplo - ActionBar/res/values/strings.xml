@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="app_name">Exemplo - ActionBar</string>
@@ -7,5 +8,7 @@
     <string name="title_activity_narrow">NarrowActivity</string>
     <string name="title_activity_view_class">ViewClassActivity</string>
     <string name="title_activity_tab">TabActivity</string>
+    <string name="title_activity_view_pager">ViewPagerActivity</string>
+    <string name="title_activity_tab_swipe">TabSwipeActivity</string>
 
 </resources>
