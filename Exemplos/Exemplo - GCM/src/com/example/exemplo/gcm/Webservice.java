@@ -8,7 +8,7 @@ import com.google.android.gcm.GCMRegistrar;
 public class Webservice {
 
 	public static void register(Context context, String username, String regId) {
-		String url = "http://192.168.2.144:9000/push/register/" + username + "/" + regId;
+		String url = "http://10.200.118.110:9000/push/register/" + username + "/" + regId;
 		String result = HttpUtil.doGet(url);
 		Log.d("Webservice", result);
 
@@ -16,7 +16,7 @@ public class Webservice {
 	}
 
 	public static void unregister(Context context, String regId) {
-		String url = "http://192.168.2.144:9000/push/unregister/" + regId;
+		String url = "http://10.200.118.110:9000/push/unregister/" + regId;
 		String result = HttpUtil.doGet(url);
 		Log.d("Webservice", result);
 

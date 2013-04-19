@@ -10,25 +10,21 @@ import android.content.Intent;
 import android.os.Bundle;
 
 public class AccountAuthenticator extends AbstractAccountAuthenticator {
-	private Context mContext;
 
 	public AccountAuthenticator(Context context) {
 		super(context);
-		mContext = context;
 	}
 
 	@Override
 	public Bundle addAccount(AccountAuthenticatorResponse response, String accountType, String authTokenType,
 			String[] requiredFeatures, Bundle options) throws NetworkErrorException {
 
-		Bundle reply = new Bundle();
+		Bundle bundle = new Bundle();
+		Intent intent = new Intent("com.alienlabz.conta.login");
+		intent.putExtra(AccountManager.KEY_ACCOUNT_AUTHENTICATOR_RESPONSE, response);
+		bundle.putParcelable(AccountManager.KEY_INTENT, intent);
 
-		Intent i = new Intent(mContext, AccountActivity.class);
-		i.setAction("com.alienlabz.sync.LOGIN");
-		i.putExtra(AccountManager.KEY_ACCOUNT_AUTHENTICATOR_RESPONSE, response);
-		reply.putParcelable(AccountManager.KEY_INTENT, i);
-
-		return reply;
+		return bundle;
 	}
 
 	@Override

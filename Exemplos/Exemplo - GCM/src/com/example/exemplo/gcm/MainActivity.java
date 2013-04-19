@@ -13,10 +13,13 @@ import com.google.android.gcm.GCMRegistrar;
  * 
  * 1. Ir no Console https://code.google.com/apis/console/
  * 
- * 2. Criar um Projeto e anotar o projectId. 2.1. Ir em Services 2.2. Habilitar
- * Google Cloud Messaging for Android 2.3. Ir em API Access 2.4. Clicar em
- * Create New Server API - ƒ melhor para colocar uma whitelist de IPs de
- * servidores que podem acessar. 2.5. Anotar a Chave criada.
+ * 2. Criar um Projeto e anotar o projectId. 
+ * 		2.1. Ir em Services 
+ * 		2.2. Habilitar  Google Cloud Messaging for Android 
+ * 		2.3. Ir em API Access 
+ * 		2.4. Clicar em Create New Server Key - ƒ melhor para colocar uma whitelist de IPs de
+ * servidores que podem acessar. 
+ * 		2.5. Anotar a Chave criada.
  * 
  * 3. Copiar as bibliotecas da SDK
  * 

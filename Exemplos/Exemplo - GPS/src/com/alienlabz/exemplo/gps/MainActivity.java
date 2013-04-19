@@ -77,9 +77,11 @@ public class MainActivity extends Activity {
 		} else {
 
 			location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
-			Toast.makeText(this,
-					"Última localização por Network: " + location.getLatitude() + ", " + location.getLongitude(),
-					Toast.LENGTH_SHORT).show();
+			if (location != null) {
+				Toast.makeText(this,
+						"Última localização por Network: " + location.getLatitude() + ", " + location.getLongitude(),
+						Toast.LENGTH_SHORT).show();
+			}
 		}
 
 		on.setOnClickListener(new OnClickListener() {
@@ -89,6 +91,7 @@ public class MainActivity extends Activity {
 				if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
 
 					Toast.makeText(MainActivity.this, "Usando GPS", Toast.LENGTH_SHORT).show();
+
 					locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, listener);
 				} else if (locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
 

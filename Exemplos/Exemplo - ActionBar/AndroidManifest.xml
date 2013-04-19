@@ -36,16 +36,15 @@
         <activity
             android:name="com.alienlabz.actionbar.viewpager.ViewPagerActivity"
             android:label="@string/title_activity_view_pager" >
+        </activity>
+        <activity
+            android:name="com.alienlabz.actionbar.tabswipe.TabSwipeActivity"
+            android:label="@string/title_activity_tab_swipe" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-        </activity>
-        <activity
-            android:name="com.alienlabz.actionbar.tabswipe.TabSwipeActivity"
-            android:label="@string/title_activity_tab_swipe" >
         </activity>
     </application>
 
